@@ -121,6 +121,8 @@
   .arrow:focus-visible{outline:3px solid var(--brown);outline-offset:2px}
   .arrow svg{width:22px;height:22px}
   .more-flavours{margin-top:20px;background:var(--paper);border:1px dashed #E0CDB1;border-radius:16px;padding:16px 18px}
+.mf-cols{columns:2;column-gap:30px}
+.row{break-inside:avoid;page-break-inside:avoid}
   .more-flavours .mh{font-family:var(--head);font-weight:800;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
 
   /* ---------- CATERING / FOOTER ---------- */
@@ -149,6 +151,8 @@
   .ribbon svg{width:16px;height:16px}
 
   @media(max-width:780px){
+    .mf-cols{columns:1}
+    .row{font-size:.86rem}
     .hero-grid{grid-template-columns:1fr;gap:26px}
     .hero-art{max-width:360px;margin:0 auto;width:100%}
     .values{flex-wrap:nowrap;gap:6px}
@@ -380,7 +384,7 @@
 
         <div class="more-flavours">
           <div class="mh">More on the counter</div>
-          <div style="columns:2;column-gap:30px">
+          <div class="mf-cols">
             <div class="row"><span class="nm">Salted Caramel Brownie</span><span class="dots"></span><span class="pr">£2.95</span></div>
             <div class="row"><span class="nm">Nutella Bueno White Choc Blondie</span><span class="dots"></span><span class="pr">£2.95</span></div>
             <div class="row"><span class="nm">Choccy Rocky Road</span><span class="dots"></span><span class="pr">£2.95</span></div>
@@ -509,7 +513,7 @@
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
           <h3 id="cat-h">Business Catering</h3>
           <p>Planning a meeting? Ask about sandwich platters, lunch options and refreshments for team meetings and business events.</p>
-          <a class="btn btn-primary no-print" href="mailto:hello@coffeeking.co.uk?subject=Catering%20enquiry" style="align-self:flex-start">
+          <a class="btn btn-primary no-print" href="mailto:info@coffeeking.org.uk?subject=Catering%20enquiry" style="align-self:flex-start">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
             Enquire about catering
           </a>
